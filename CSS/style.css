@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+}
+   
+
+body{
+    width: 100vw;
+    height:100vh;
+    background-color: #cc7254;
+    display: grid;
+ 
+}
+
+header{
+    
+    width: 100vw;
+    height:10vh;
+   
+    background-image:linear-gradient(190deg, rgba(217,212,145,1) 0%, rgba(170,144,144,1) 35%, rgba(213,135,218,1) 98%);
+   
+}
+#menu{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+   
+
+}
+#logo{
+    margin-top: 15px;
+    max-height: 70px;
+    max-width: 70px;
+    border-radius: 50%;
+}
+#logo:hover{
+    transform: rotate(360deg);
+    transition: 3s;
+}
+a{
+  text-decoration: none;  
+  color: black;
+}
+
+main  {
+    display: flex;
+    
+    width: 100vw;
+    height: 85vh;
+   background-image: linear-gradient(180deg, rgba(226,219,152,1) 0%, rgba(242,173,173,1) 35%, rgba(196,157,205,1) 100%);
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(1fr,1fr ,1fr);
+    grid-template-rows: repeat(1fr, 1fr);
+    grid-template-areas: "primera_foto primera_foto primera_foto"
+                          "segunda_foto tercer_foto cuarta_foto "
+                         
+} 
+.primera_foto{
+    grid-area: primera_foto ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center
+    
+    
+}
+.segunda_foto{
+    grid-area: segunda_foto;
+    height:300px;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center
+}
+.tercer_foto{
+    grid-area: tercer_foto;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center
+}
+.cuarta_foto{
+    grid-area: cuarta_foto;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center
+    
+}
+
+#foto1{
+    height: 350px;
+    width: 1613px;
+   
+}
+
+#foto2{
+    height: 350px;
+    width: 300px;
+    animation-delay: 2;
+    animation-duration: 2s;
+   
+}
+#foto2:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+}
+#foto3{
+    height: 350px;
+    animation-delay: 2;
+    animation-duration: 2s;
+   
+}
+#foto3:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+}
+#foto4{
+    height: 350px;
+ 
+    animation-delay: 3;
+    animation-duration: 3s;
+   
+}
+#foto4:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+}
+ 
+footer{
+
+    width: 100vw;
+    height: 5vh;
+    background-image: linear-gradient(190deg, rgba(240,235,192,1) 0%, rgba(70,47,47,1) 35%, rgba(213,135,218,1) 98%);
+}
+/* destock first  */
+
+@media only screen and (max-width:1200px){
+    #logo{
+        margin-top: 5px;
+        max-height: 68px;
+        max-width: 68px;
+        border-radius: 50%;
+    }
+   
+    main  {
+        justify-items: center;
+        grid-template-columns: repeat(1fr ,1fr);
+        grid-template-rows: repeat(1fr,1fr, 1fr);
+        grid-template-areas: "primera_foto primera_foto"
+                              "segunda_foto segunda_foto  "
+                             "tercer_foto tercer_foto"
+                             "cuarta foto curta foto"
+
+    } 
+    #foto1{
+        height: 250px;
+        width: 1100px;
+       
+    }
+    #foto2{
+        height: 250px;
+        width: 200px;
+      
+       
+    }
+    #foto3{
+        height: 250px;
+        width: 200px;
+
+       
+    }
+    #foto4{
+        height: 250px;
+        width: 200px;
+
+       
+    }
+
+
+}
+@media only screen and (max-width:768px),(max-height:649){
+    body{
+        height: 100%;
+        width: 100%;
+    }
+    header{
+        height: 10%;
+        width: 100%;
+    }
+    #logo{
+        margin-top: 5px;
+        max-height: 38px;
+        max-width: 38px;
+        border-radius: 50%;
+    }
+   
+    main  {
+        display: grid;
+        height: 85%;
+        justify-items: center;
+        grid-template-columns:  repeat(1fr);;
+        grid-template-rows: repeat(.5fr,.5fr .5fr .5fr);
+        grid-template-areas: "primera_foto "
+                              "segunda_foto   "
+                             "tercer_foto "
+                             "cuarta foto "
+                             
+
+    } 
+    .segunda_fila{
+        display: flex;
+        justify-content: center;
+        column-gap: 5ch;
+    }
+    #foto1{
+        height: 250px;
+        width: 500px;
+       
+    }
+    #foto2{
+        height: 150px;
+        width: 100px;
+        animation-delay: 2;
+        animation-duration: 2s;
+       
+    }
+    #foto3{
+        height: 150px;
+        width: 100px;
+
+       
+    }
+    #foto4{
+        height: 150px;
+        width: 100px;
+        animation-delay: 2;
+        animation-duration: 2s;
+       
+    }
+    
+}
+@media only screen and  (max-width:320px){
+
+}
+/* movile first */
+@media (min-width:320px){
+
+}
+@media (min-width:768px){
+
+}
+@media (min-width:1200px){
+
+}

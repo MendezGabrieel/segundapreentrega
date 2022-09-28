@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+}
+   
+
+body{
+    width: 100vw;
+    height:100vh;
+    background-color: #cc7254;
+    display: grid;
+ 
+}
+
+header{
+    
+    width: 100vw;
+    height:10vh;
+    background-image:linear-gradient(190deg, rgba(217,212,145,1) 0%, rgba(170,144,144,1) 35%, rgba(213,135,218,1) 98%);
+   
+}
+#menu{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+
+   
+
+}
+#logo{
+    margin-top: 15px;
+    max-height: 70px;
+    max-width: 70px;
+    border-radius: 50%;
+
+    
+
+}
+#logo:hover{
+    transform: rotate(360deg);
+    transition: 3s;
+}
+a{
+  text-decoration: none;  
+  color: black;
+}
+main  {
+    display: flex;
+    width: 100vw;
+    height: 85vh;
+    background-image: linear-gradient(180deg, rgba(226,219,152,1) 0%, rgba(242,173,173,1) 35%, rgba(196,157,205,1) 100%);;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(.5fr,.5fr,.5fr, .5fr ,.5fr);
+    grid-template-rows: repeat(1fr , 1fr);
+    grid-template-areas: "f1 f2 f3 f4 f5"
+                          "f6 f7 f8 f9 f10"
+                         
+} 
+main section div{
+    flex-wrap: wrap;
+    flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+}
+main section img{
+    height: 300px;
+    width: 300px;
+    justify-content: center;
+
+    
+}
+.f1{
+    grid-area: f1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center
+}
+.f2{
+    grid-area: f2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center
+}
+.f3{
+    grid-area: f3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center
+}
+.f4{
+    grid-area: f4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center
+}
+.f5{
+    grid-area: f5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center
+}
+.f6{
+    grid-area: f6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center
+}
+.f7{
+    grid-area: f7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center
+}
+.f8{
+    grid-area: f8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center
+}
+.f9{
+    grid-area: f9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center
+}
+.f10{
+    grid-area: f10;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center
+}
+#s1{
+    animation-delay: 2;
+    animation-duration: 2s;
+   
+}
+#s1:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+}
+#s2{
+    animation-delay: 2;
+    animation-duration: 2s;
+   
+}
+#s2:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+}
+#s3{
+    animation-delay: 2;
+    animation-duration: 2s;
+   
+}
+#s3:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+}
+#s4{
+    animation-delay: 2;
+    animation-duration: 2s;
+   
+}
+#s4:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+}
+#s5{
+    animation-delay: 2;
+    animation-duration: 2s;
+    
+}
+#s5:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+}
+#s6{
+    animation-delay: 2;
+    animation-duration: 2s;
+   
+}
+#s6:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+}
+#s7{
+    animation-delay: 2;
+    animation-duration: 2s;
+   
+}
+#s7:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+}
+#s8{
+    animation-delay: 2;
+    animation-duration: 2s;
+   
+}
+#s8:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+}
+#s9{
+    animation-delay: 2;
+    animation-duration: 2s;
+   
+}
+#s9:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+}
+#s10{
+    animation-delay: 2;
+    animation-duration: 2s;
+   
+}
+#s10:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+
+
+    
+footer{
+    width: 100vw;
+    height: 5vh;
+    background-image: linear-gradient(190deg, rgba(240,235,192,1) 0%, rgba(70,47,47,1) 35%, rgba(213,135,218,1) 98%);
+}
